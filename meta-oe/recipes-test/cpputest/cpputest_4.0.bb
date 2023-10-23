@@ -17,8 +17,6 @@ EXTRA_OECMAKE = "-DLONGLONG=ON \
                  -DTESTS=OFF \
                  "
 
-DEV_PKG_DEPENDENCY = ""
-
 FILES:${PN}-dev += "${libdir}/CppUTest/cmake/*"
 
 PACKAGECONFIG ??= ""
