@@ -24,6 +24,18 @@ PACKAGES =+ "${PN}-compliance ${PN}-gst ${PN}-pycamera"
 
 PACKAGECONFIG ??= " \
     ${@bb.utils.filter('DISTRO_FEATURES', 'opengl', d)} \
+    dng \
+    dw \
+    compliance \
+    gst \
+    jpeg \
+    kms \
+    opengl \
+    python \
+    sdl \
+    unwind \
+    vimc \
+    virtual \
 "
 
 PACKAGECONFIG[dng] = "-Dapps-output-dng=enabled,-Dapps-output-dng=disabled,tiff"
